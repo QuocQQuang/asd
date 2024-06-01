@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="#ffffff"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    tools:context=".activity.activity_class"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="16sp"
+
+                android:layout_marginEnd="16sp"
+                android:layout_marginBottom="16sp"
+                android:paddingLeft="10dp"
+                android:text="Tạo bài tập"
+android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/closeexCreate"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/baseline_close_24" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/exTitle"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+            android:lines="2"
+            android:background="@drawable/search_bg_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tiêu đề"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:paddingStart="15dp"
+            />
+        <EditText
+            android:id="@+id/exContext"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+            android:lines="2"
+            android:background="@drawable/search_bg_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Nội dung"
+            android:paddingStart="15dp"
+            />
+        <EditText
+            android:id="@+id/exLink"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+            android:lines="2"
+            android:background="@drawable/search_bg_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Đính kèm link drive"
+            android:paddingStart="15dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <EditText
+            android:id="@+id/dayEnd"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+
+            android:layout_marginBottom="10dp"
+            android:lines="2"
+            android:background="@drawable/search_bg_design"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Ngày đến hạn"
+            android:paddingStart="15dp"
+            android:onClick="showDatePickerDialog"
+        />
+            <EditText
+                android:id="@+id/timeEnd"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:lines="2"
+                android:background="@drawable/search_bg_design"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="Giờ đến hạn"
+                android:paddingStart="15dp"
+                android:onClick="showTimePickerDialog"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnCreateex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_design"
+            android:layout_gravity="center"
+            android:text="Tạo"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
